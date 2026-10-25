@@ -2,7 +2,7 @@
 
 Karim's personal hub: the one address every LinkedIn post and episode links to. It says who he is, holds a project page per app, runs the email signup that doubles as each app's waitlist, and grows a "how I built it" section. It belongs to no single project. Sila, the demo Islamic bank in `karim-belhadjali/islamic-bank`, is the first project page.
 
-Start any session by loading the open issue labelled `wayfinder:map` and reading its Notes.
+Start any session by loading the open issue labelled `wayfinder:map` and reading its Notes. The current map is [#1](https://github.com/karim-belhadjali/hub/issues/1): hub v1 live on a free address, then on a custom domain.
 
 ## Agent skills
 
