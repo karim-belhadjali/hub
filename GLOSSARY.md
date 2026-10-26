@@ -39,16 +39,12 @@ _Avoid_: Signups, leads
 ### Addresses
 
 **Free address**:
-The host's own subdomain the hub launches on, before any purchased domain.
+The host's own subdomain for the hub. It exists but is never shared, and it sends visitors on to the custom domain.
 _Avoid_: Temporary domain, staging URL
 
 **Custom domain**:
-A domain Karim owns, which the hub moves to once it is in hand. Planned as `karimbelhadjali.com`.
+The domain Karim owns, `karimbelhadjali.com`. The hub launches on it, and every link to the hub uses it.
 _Avoid_: Real domain, production domain
-
-**Domain move**:
-Switching the hub from the free address to the custom domain while every link already posted keeps landing.
-_Avoid_: Migration, cutover
 
 ### Languages
 
