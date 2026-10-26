@@ -39,7 +39,7 @@ _Avoid_: Signups, leads
 ### Addresses
 
 **Free address**:
-The host's own subdomain for the hub. It exists but is never shared, and it sends visitors on to the custom domain.
+The host's own subdomain for the hub. It is switched off, so the custom domain is the hub's only address.
 _Avoid_: Temporary domain, staging URL
 
 **Custom domain**:
