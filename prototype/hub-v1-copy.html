@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PROTOTYPE hub v1 copy</title>
+<!-- PROTOTYPE, throwaway. Answers: what does hub v1 say, page by page? Round 2: home page A with no projects, four about lines via ?variant=A|B|C|D, then every other v1 page. Rough English copy only. -->
+<style>
+  :root { --ink:#1b1b1b; --muted:#666; --line:#ddd; --accent:#0b6b4f; --bg:#fbfaf7; --note:#fff6d6; }
+  body { margin:0; font:17px/1.55 system-ui, sans-serif; color:var(--ink); background:var(--bg); }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 120px; }
+  .page { border:1px solid var(--line); background:#fff; padding:24px; margin:28px 0; border-radius:6px; }
+  .url { font:13px ui-monospace, monospace; color:var(--muted); margin:0 0 12px; }
+  .note { background:var(--note); padding:8px 12px; font-size:14px; border-radius:4px; margin:12px 0; }
+  .note::before { content:"Q for Karim. "; font-weight:600; }
+  nav.top { display:flex; justify-content:space-between; font-size:14px; border-bottom:1px solid var(--line); padding-bottom:10px; margin-bottom:18px; }
+  nav.top span { color:var(--muted); }
+  h1 { font-size:30px; line-height:1.2; margin:8px 0 12px; }
+  h2 { font-size:20px; margin:24px 0 8px; }
+  form { display:grid; gap:8px; margin:12px 0; max-width:420px; }
+  input { font:inherit; padding:8px 10px; border:1px solid #bbb; border-radius:4px; }
+  button { font:inherit; padding:9px 14px; background:var(--accent); color:#fff; border:0; border-radius:4px; cursor:pointer; }
+  .small { font-size:13px; color:var(--muted); }
+  .state { border-inline-start:3px solid var(--accent); padding-inline-start:12px; margin:14px 0; }
+  footer.f { border-top:1px solid var(--line); margin-top:24px; padding-top:10px; font-size:13px; color:var(--muted); }
+  #bar { position:fixed; bottom:14px; left:50%; transform:translateX(-50%); background:#222; color:#fff; padding:8px 12px; border-radius:20px; display:flex; gap:8px; align-items:center; font-size:14px; }
+  #bar a { color:#fff; padding:3px 10px; border-radius:12px; text-decoration:none; }
+  #bar a.on { background:var(--accent); }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<main>
+
+<p class="small">PROTOTYPE, throwaway, round 2. Rough English copy for <a href="https://github.com/karim-belhadjali/hub/issues/7">Prototype: hub v1 copy and page outline</a>. Hub v1 has no project pages. The bar at the bottom switches the about line. Everything else is the same across variants. Yellow boxes are questions for you.</p>
+
+<section class="page">
+  <p class="url">/en/ &middot; home</p>
+  <nav class="top"><b>Karim Belhadjali</b><span>Posts &middot; EN FR AR</span></nav>
+  <div class="variant" data-v="A">
+    <h1>I build software in public and show how it works.</h1>
+    <p>I'm a software engineer. Each project gets built in the open, one step at a time, and every step goes up on LinkedIn.</p>
+  </div>
+  <div class="variant hidden" data-v="B">
+    <h1>I build software people can trust, and show every step.</h1>
+    <p>I'm a software engineer. I pick projects where getting it right matters, build them in the open, and post what I learn on LinkedIn.</p>
+  </div>
+  <div class="variant hidden" data-v="C">
+    <h1>Software engineer, building in public.</h1>
+    <p>I build one project at a time and share the whole process on LinkedIn, including the parts that went wrong.</p>
+  </div>
+  <div class="variant hidden" data-v="D">
+    <h1>Hi, I'm Karim. I build things and write down how.</h1>
+    <p>I'm a software engineer. This site holds my projects once they ship, and the notes I take while building them.</p>
+  </div>
+  <p><a href="#">LinkedIn</a> &middot; <a href="#">GitHub</a></p>
+
+  <h2>Hear when I ship something</h2>
+  <p>One email when a new project is ready to try. Nothing else.</p>
+  <form onsubmit="return false"><input placeholder="Full name"><input placeholder="Email"><button>Keep me posted</button></form>
+  <p class="small">You'll get emails from Karim about his projects. Unsubscribe any time. <a href="#privacy">Privacy</a></p>
+  <div class="note">"One email when a new project is ready to try. Nothing else." is a narrow promise. It keeps unsubscribes low, but it rules out sending posts by email. Keep it this narrow?</div>
+
+  <h2>Posts</h2>
+  <p class="small">No posts yet.</p>
+
+  <footer class="f">Privacy &middot; LinkedIn &middot; GitHub &middot; EN FR AR</footer>
+</section>
+
+<h2>Every other v1 page</h2>
+
+<section class="page">
+  <p class="url">Form states, under the home page form</p>
+  <div class="state"><b>Sent.</b> Check your inbox. If you're new here, there's a link to confirm your email.</div>
+  <div class="state"><b>Error.</b> That didn't go through. Check the email address and try again.</div>
+  <p class="small">A known subscriber sees "Sent" too and gets no email, so the form never reveals who's on the list.</p>
+</section>
+
+<section class="page">
+  <p class="url">Confirmation email, from no-reply@karimbelhadjali.com</p>
+  <p><b>Subject:</b> Confirm your email for Karim's updates</p>
+  <p>Hi {name},</p>
+  <p>Click below to confirm. If you didn't sign up, ignore this email and nothing happens.</p>
+  <p><button>Confirm my email</button></p>
+  <p class="small">You agreed to get emails from Karim about his projects. Unsubscribe any time. This address doesn't take replies. Write to privacy@karimbelhadjali.com about your data.</p>
+</section>
+
+<section class="page">
+  <p class="url">/en/confirmed</p>
+  <h1>You're on the list.</h1>
+  <p>Thanks, {name}. You'll hear from me when there's something to try. Until then, the build is on LinkedIn.</p>
+  <p><a href="#">Follow on LinkedIn</a> &middot; <a href="#">Back to the home page</a></p>
+</section>
+
+<section class="page">
+  <p class="url">/en/posts</p>
+  <h1>Posts</h1>
+  <p>How I build things, written down. The first one is on its way.</p>
+  <p class="small">Later: a list of posts, newest first, each with a date and a line. In French and Arabic, an untranslated post shows with an "English" label.</p>
+</section>
+
+<section class="page" id="privacy">
+  <p class="url">/en/privacy</p>
+  <h1>Privacy</h1>
+  <ul>
+    <li>Who: Karim Belhadjali, privacy@karimbelhadjali.com.</li>
+    <li>What: your email, full name and language.</li>
+    <li>Why: to email you about Karim's projects.</li>
+    <li>Who else: Brevo stores the list in the EU and sends the emails. Cloudflare serves the site, checks the form with Turnstile and counts page views without cookies.</li>
+    <li>Cookies: one, remembering the language you picked.</li>
+    <li>How long: until you unsubscribe or ask for deletion. Deletion within 30 days.</li>
+    <li>Your rights: see, correct or delete your data by writing to privacy@.</li>
+  </ul>
+</section>
+
+<section class="page">
+  <p class="url">/en/404</p>
+  <h1>Nothing here.</h1>
+  <p>This page doesn't exist, or it moved. <a href="#">Go to the home page</a>.</p>
+</section>
+
+<section class="page">
+  <p class="url">Every page: head and footer</p>
+  <ul>
+    <li>Title pattern: "Posts &middot; Karim Belhadjali", and just "Karim Belhadjali" on the home page.</li>
+    <li>One LinkedIn share image for every page: name and about line.</li>
+    <li>Footer: Privacy, LinkedIn, GitHub, language switcher.</li>
+  </ul>
+</section>
+
+</main>
+<div id="bar">About line <a href="?variant=A">A</a><a href="?variant=B">B</a><a href="?variant=C">C</a><a href="?variant=D">D</a></div>
+<script>
+  const v = new URLSearchParams(location.search).get('variant') || 'A';
+  document.querySelectorAll('.variant').forEach(s => s.classList.toggle('hidden', s.dataset.v !== v));
+  document.querySelectorAll('#bar a').forEach(a => a.classList.toggle('on', a.textContent === v));
+</script>
+</body>
+</html>
