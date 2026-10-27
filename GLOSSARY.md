@@ -5,11 +5,11 @@ Karim's personal site, the one address every post and episode links to. It intro
 ## Language
 
 **Hub**:
-The personal site as a whole, shared by every app Karim builds and owned by none of them.
-_Avoid_: Portfolio, blog, homepage
+The personal site as a whole: Karim's introduction, portfolio and posts. Shared by every project and owned by none of them.
+_Avoid_: Blog, homepage
 
 **Project**:
-One app Karim builds in public, such as Sila. Each project gets a project page and a waitlist tag.
+One app Karim builds in public, such as Packet Village or Sila. A project gets a project page and a waitlist tag once a version of it is deployed.
 _Avoid_: Product, app page
 
 **Project page**:
@@ -29,7 +29,7 @@ A person on the hub's single email list. One person is one subscriber, however m
 _Avoid_: Lead, contact, user
 
 **Waitlist**:
-The subscribers tagged with one project, such as the Sila waitlist. A filter on the list, never a list of its own.
+The subscribers tagged with one project, such as the Packet Village waitlist. A filter on the list, never a list of its own.
 _Avoid_: Signup list, beta list
 
 **Traction number**:
